@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Zilla+Slab+Highlight');
+
+body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar
+{
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    padding: 15px 0;
+}
+
+#navbar > a
+{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    background-color: rgb(68, 93, 119);
+}
+
+#welcome-section
+{
+    font-family: 'Zilla Slab Highlight', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    background-color: rgb(68, 93, 119);
+}
+
+#welcome-message
+{
+    padding-top: 40vh;
+}
+
+#projects
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.project-tile
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.151);
+    overflow: hidden;
+}
+
+.info
+{
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255, .9);
+    padding-bottom: 20px;
+    transition: height .30s ease-in-out;
+}
+
+.info > h2
+{
+    display: block;
+    margin-bottom: 38px;
+}
+
+.info > a
+{
+    text-decoration: none;
+    background-color: rgb(68, 93, 119);
+    color: white;
+    width: 85px;
+    padding: 7px 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.15);
+}
+
+.info:hover
+{
+    height: 110px;
+}
+
+#survey_tile
+{
+    background: linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.15)
+    ),
+    url("./images/survey_screenshot.png") center no-repeat;
+    background-size: cover;
+}
+
+#product_tile
+{
+    background: linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.15)
+    ),
+    url("./images/productlanding_screenshot.png") no-repeat;
+    background-size: cover;
+}
+
+#tribute_tile
+{
+    background: linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.15)
+    ),
+    url("./images/tribute_screenshot.png") center no-repeat;
+    background-size: cover;
+}
+
+#tech_tile
+{
+    background: linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.15)
+    ),
+    url("./images/techdocs_screenshot.png")  no-repeat;
+    background-size: cover;
+}
+
+#tech_tile > .info
+{
+    padding-bottom: 35px;
+}
+
+#tech_tile > .info > h2
+{
+    margin-bottom: 28px;
+}
+
+#links
+{
+    text-align: center;
+}
+
+#warning
+{
+    padding: 20px 0;
+    text-align: center;
+    background-color: #303847;
+    color: rgba(255, 255, 255, .8);
+}
+
+@media (max-width: 900px)
+{
+    h1
+    {
+        font-size: 35px;
+    }
+
+    #welcome-message 
+    {
+        font-size: 20px;
+    }
+}
